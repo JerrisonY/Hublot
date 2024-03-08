@@ -5,8 +5,7 @@ function LandingPage() {
 
   return (
     <>
-        <HomeVideo />
-        <h1 className="new">Hi</h1>
+      <HomeVideo />
     </>
   )
 }
