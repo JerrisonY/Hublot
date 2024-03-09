@@ -17,6 +17,10 @@ function HomeVideo() {
                 Your browser does not support the video tag.
             </video>
         </div>
+
+        <div className='video-text-c'>
+            <h1>TAKASHI MURAKAMI</h1>
+        </div>
     </motion.div>
   )
 }
