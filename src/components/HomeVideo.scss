@@ -13,12 +13,41 @@
 }
 
 .video-text-c {
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    transform: translate(-13%, -50%);
 
-    h1 {
+    .video-subheader {
+        padding-bottom: 20px;
+        letter-spacing: 0.05em;
+        font-weight: 600;
+        font-size: 0.9em;
+    }
+
+    .video-header {
         font-family: $header-font;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        font-size: clamp(4em, 6vw, 6.2em);
+        font-weight: 100;
+        padding: 0;
+        margin: 0;
+    }
+
+    .video-shop {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0 10px 0;
+        font-weight: 600;
+        font-size: 0.75em;
+        text-decoration: none;
+        color: black;
+        border-bottom: solid 1px black;
+        width: 45%;
+        transition: 0.5s;
+
+        &:hover {
+            width: 48%;
+        }
     }
 }
+

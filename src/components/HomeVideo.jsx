@@ -19,7 +19,9 @@ function HomeVideo() {
         </div>
 
         <div className='video-text-c'>
-            <h1>TAKASHI MURAKAMI</h1>
+            <p className='video-subheader'>CLASSIC FUSION</p>
+            <h1 className='video-header'>TAKASHI<br />MURAKAMI</h1>
+            <a className="video-shop" href='https://www.hublot.com/en-ca' target='_blank'>SHOP NOW <i class="fa-solid fa-arrow-right"></i></a>
         </div>
     </motion.div>
   )
