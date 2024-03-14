@@ -12,7 +12,8 @@ function NavBar() {
             const visible = prevScrollPos > currentScrollPos;
 
             setPrevScrollPos(currentScrollPos);
-            setVisible(visible);
+            if (window.scrollY >= 200)
+                setVisible(visible);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -23,7 +24,7 @@ function NavBar() {
   return (
     <nav 
         className={`nav-container ${visible ? 'visible' : 'hidden'} 
-        ${(window.scrollY > 100) ? 'default-nav' : ''}`}
+        ${(window.scrollY > 400) ? 'default-nav' : ''}`}
     >
         <NavLink to='/'>
             <img src="public/hublot.svg" alt="" />
