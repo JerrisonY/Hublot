@@ -101,18 +101,11 @@
     transform: translate(-50%, -50%);
   }
 
-  @media screen and (max-width: 850px) {
-    
-    .video-text-c {
+// media queries
 
-        .video-header {
-            // font-weight: 600;
-        }
-        
-    }
+@media screen and (max-width: 900px) {
 
     .icon-scroll-text {
-        font-weight: 100;
-        bottom: 11%;
+        display: none;
     }
 }
