@@ -1,1 +1,7 @@
 $header-font: 'gallery-modern';
+
+@mixin default-link {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}

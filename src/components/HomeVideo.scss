@@ -34,13 +34,12 @@
     }
 
     .video-shop {
+        @include default-link;
         display: flex;
         justify-content: space-between;
         padding: 20px 0 10px 0;
         font-weight: 600;
         font-size: 0.75em;
-        text-decoration: none;
-        color: black;
         border-bottom: solid 1px black;
         width: 45%;
         transition: 0.5s;

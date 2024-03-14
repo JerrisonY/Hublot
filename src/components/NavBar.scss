@@ -1,0 +1,28 @@
+@import '../styles/library.scss';
+
+.nav-container {
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 30px;
+
+    a {
+        @include default-link;
+        font-weight: 600;
+        font-size: 0.75em;
+        
+        img {
+            width: 2rem;
+        }
+    }
+
+    div {
+        a {
+            padding-left: 30px;
+        }
+    }
+
+}
