@@ -6,6 +6,9 @@ function LandingPage() {
   return (
     <>
       <HomeVideo />
+      <section className='home-feature'>
+
+      </section>
     </>
   )
 }

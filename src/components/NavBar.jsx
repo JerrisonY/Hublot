@@ -2,6 +2,9 @@ import './NavBar.scss'
 import { NavLink } from 'react-router-dom'
 
 function NavBar() {
+    // const [navScroll, setNavScroll] = useState(false);
+    
+
   return (
     <nav className="nav-container">
         <NavLink to='/'>
