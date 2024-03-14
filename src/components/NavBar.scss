@@ -8,8 +8,16 @@
     position: fixed;
     width: 100%;
     padding: 20px 30px;
-    // background-color: white;
-    // border-bottom: solid 1px lightgray;
+    transition: 0.3s;
+
+    &.hidden {
+        transform: translateY(-100%);
+    }
+
+    &.visible {
+        transform: translateY(0);
+        
+    }
 
     a {
         @include default-link;
@@ -27,4 +35,9 @@
         }
     }
 
+}
+
+.default-nav {
+    background-color: white;
+    border-bottom: solid 1px lightgray;
 }
