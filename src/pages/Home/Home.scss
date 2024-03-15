@@ -11,7 +11,7 @@
 
 .hublot-spin-vid-c {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     width: 50%;
 
     video {
@@ -20,7 +20,8 @@
 }
 
 .hublot-spin-text {
-    width: 50%;
+    width: 40%;
+    
 
     h1 {
         @include default-heading;
@@ -66,6 +67,10 @@
         video {
             width: 100%;
         }
+    }
+
+    .hublot-spin-text {
+        width: 50%;
     }
 
 }
