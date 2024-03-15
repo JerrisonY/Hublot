@@ -5,3 +5,37 @@ $header-font: 'gallery-modern';
     color: black;
     text-transform: uppercase;
 }
+
+@mixin default-heading {
+    font-family: $header-font;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+@mixin default-subheading {
+    letter-spacing: 0.085em;
+    text-transform: uppercase;
+}
+
+@mixin price-border {
+    content: url(../../../public/border.svg);
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+}
+
+@mixin shop-button($font-color, $border-color) {
+    color: $font-color;
+    border: solid 0.5px $border-color;
+    padding: 15px 50px;
+    margin-top: 50px;
+    background-color: initial;
+    text-transform: uppercase;
+    font-size: 1em;
+    transition: 0.4s;
+
+    &:hover {
+        background-color: rgba($border-color, 0.1);
+    }
+}
