@@ -1,7 +1,7 @@
 @import '../styles/library.scss';
 
 .nav-container {
-    z-index: 999;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +22,8 @@
         @include default-link;
         font-weight: 600;
         font-size: 0.75em;
-        
+        letter-spacing: 0.09em;
+
         img {
             width: 2rem;
         }
@@ -39,4 +40,49 @@
 .default-nav {
     background-color: white;
     border-bottom: solid 1px lightgray;
+}
+
+// modal styles
+
+.modal {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 100dvh;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.4s;
+    transform: translateX(-100%);
+
+    &.visible {
+        transform: translateX(0);
+    }
+
+    a {
+        @include default-link;
+        font-size: clamp(2em, 2vw, 4em);
+        padding: 10px 0;
+    }
+
+}
+
+// media queries
+
+@media screen and (max-width: 900px) {
+
+    .nav-container {
+        a {
+            font-weight: 100;
+        }
+        div {
+            a{
+                padding-left: 10;
+            }
+        }
+    }
 }

@@ -105,6 +105,13 @@
 
 @media screen and (max-width: 900px) {
 
+    .video-text-c {
+        .video-subheader,
+        .video-shop {
+            font-weight: 100;
+        }
+    }
+
     .icon-scroll-text {
         display: none;
     }
