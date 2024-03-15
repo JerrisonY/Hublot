@@ -45,7 +45,7 @@
         transition: 0.5s;
 
         &:hover {
-            width: 51%;
+          width: 51%;
         }
     }
 }
@@ -101,6 +101,7 @@
     transform: translate(-50%, -50%);
   }
 
+  
 // media queries
 
 @media screen and (max-width: 900px) {
