@@ -1,5 +1,40 @@
 @import '../../styles/library.scss';
 
+// Image feature styles
+.home-img-feature {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .takashi-feat-01 {
+        width: 30%;
+
+        img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            object-position: 50% 0;
+        }
+    }
+
+    .takashi-feat-02 {
+        width: 50%;
+
+        img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+    }
+
+}
+
+
+
+// Home feature styles
 .home-feature {
     width: 100%;
     height: 100dvh;
