@@ -1,5 +1,16 @@
 @import '../../styles/library.scss';
 
+// Home quote styles
+.home-quote-c {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+
+    .home-quote {
+        font-size: clamp(1em, 2vw, 2em)
+    }
+}
+
 // Image feature styles
 .home-img-feature {
     width: 100%;

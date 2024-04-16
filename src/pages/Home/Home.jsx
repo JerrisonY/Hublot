@@ -16,6 +16,14 @@ function LandingPage() {
       <RotateDevice />
       <HomeVideo />
 
+      <motion.div
+        className="home-quote-c"
+      >
+        <span className='home-quote'>
+          “When I visited the Hublot manufacture in Switzerland for the first time, I realised to what extent the traditional know-how, precision, futuristic technology and craftsmanship were all intertwined in the creation of a watch. Bringing my art into the creativity of these watchmakers represents a unique adventure for me.”
+        </span>
+      </motion.div>
+
       <section className="home-img-feature">
         <motion.div
           className='takashi-feat-01'
