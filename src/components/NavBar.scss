@@ -12,6 +12,7 @@
 
     &.hidden {
         transform: translateY(-100%);
+        transition-duration: 0.6s;
     }
 
     &.visible {

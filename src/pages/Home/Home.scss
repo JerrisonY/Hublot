@@ -5,9 +5,11 @@
     width: 50%;
     text-align: center;
     margin: 0 auto;
+    padding: 100px 0;
 
     .home-quote {
-        font-size: clamp(1em, 2vw, 2em)
+        font-size: clamp(1em, 2vw, 2em);
+        font-weight: 100;
     }
 }
 

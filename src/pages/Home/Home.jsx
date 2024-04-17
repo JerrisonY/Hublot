@@ -18,6 +18,11 @@ function LandingPage() {
 
       <motion.div
         className="home-quote-c"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.3, delay: 0.1 }} 
+        viewport={{ once: true, amount: 0 }}
       >
         <span className='home-quote'>
           “When I visited the Hublot manufacture in Switzerland for the first time, I realised to what extent the traditional know-how, precision, futuristic technology and craftsmanship were all intertwined in the creation of a watch. Bringing my art into the creativity of these watchmakers represents a unique adventure for me.”
@@ -27,8 +32,8 @@ function LandingPage() {
       <section className="home-img-feature">
         <motion.div
           className='takashi-feat-01'
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: -100, y: 50 }}
+          whileInView={{ opacity: 1, x: 0, y: 0 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }} 
           viewport={{ once: true, amount: 0 }}
@@ -37,8 +42,8 @@ function LandingPage() {
         </motion.div>
         <motion.div
           className='takashi-feat-02'
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: 100, y: 50 }}
+          whileInView={{ opacity: 1, x: 0, y: 0 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }} 
           viewport={{ once: true, amount: 0 }}
