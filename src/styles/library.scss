@@ -1,3 +1,11 @@
+.white-bg {
+    background-color: white;
+}
+
+.white-text {
+    color: white;
+}
+
 $header-font: 'gallery-modern';
 
 @mixin default-link {
@@ -39,3 +47,4 @@ $header-font: 'gallery-modern';
         background-color: rgba($border-color, 0.1);
     }
 }
+
