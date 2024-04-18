@@ -66,6 +66,7 @@
   margin-top: -35px;
   box-shadow: inset 0 0 0 1px #000;
   border-radius: 25px;
+  display: none;
 }
 
 .icon-scroll:before {
@@ -97,7 +98,7 @@
     text-transform: uppercase;
     position: absolute;
     left: 50%;
-    bottom: 9%;
+    bottom: 3%;
     transform: translate(-50%, -50%);
   }
 
@@ -115,5 +116,9 @@
 
     .icon-scroll-text {
         display: none;
+    }
+
+    .icon-scroll {
+      display: block;
     }
 }

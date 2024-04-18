@@ -29,9 +29,15 @@ function HomeVideo() {
             <h1 className='video-header'>TAKASHI<br />MURAKAMI</h1>
             <a className="video-shop" href='https://www.hublot.com/en-ca' target='_blank'>SHOP NOW <i class="fa-solid fa-arrow-right"></i></a>
         </motion.div>
-
-        <span className="icon-scroll-text">scroll down</span>
-        <div class='icon-scroll'></div>
+        <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }} 
+            transition={{ duration: 0.5, delay: 4 }} 
+        >
+            <span className="icon-scroll-text">scroll down</span>
+            <div class='icon-scroll'></div>
+        </motion.div>
     </motion.div>
   )
 }
