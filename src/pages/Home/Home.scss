@@ -115,8 +115,13 @@
         flex-direction: column;
     }
 
+    .hublot-feature-text {
+        text-align: center;
+    }
+
     .h-sapphire-img-c {
-        width: 60%;
+        padding-top: 50px;
+        width: 45%;
     }
 
     .hublot-spin-vid-c {
@@ -129,7 +134,8 @@
         }
     }
 
-    .hublot-feature-text {
+    .hublot-feature-text,
+    .sapphire-width {
         width: 50%;
     }
 
