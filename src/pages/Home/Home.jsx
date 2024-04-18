@@ -39,21 +39,21 @@ function LandingPage() {
       <section className="home-img-feature">
         <motion.div
           className='takashi-feat-01'
-          initial={{ opacity: 0, x: -100, y: 50 }}
+          initial={{ opacity: 0, x: -40, y: 30 }}
           whileInView={{ opacity: 1, x: 0, y: 0 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }} 
-          viewport={{ once: true, amount: 0 }}
+          transition={{ duration: 0.4, delay: 0.1 }} 
+          // viewport={{ once: true, amount: 0 }}
         >
           <img src={takashiFeature01} alt="" />
         </motion.div>
         <motion.div
           className='takashi-feat-02'
-          initial={{ opacity: 0, x: 100, y: 50 }}
+          initial={{ opacity: 0, x: 40, y: 30 }}
           whileInView={{ opacity: 1, x: 0, y: 0 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }} 
-          viewport={{ once: true, amount: 0 }}
+          transition={{ duration: 0.4, delay: 0.1 }} 
+          // viewport={{ once: true, amount: 0 }}
         >
           <img src={takashiFeature02} alt="" />
         </motion.div>
@@ -63,30 +63,60 @@ function LandingPage() {
 
 
       <section className='home-feature white-bg'>
-        <div className="hublot-feature-text sapphire-width">
+        <motion.div 
+          className="hublot-feature-text sapphire-width"
+          initial={{ opacity: 0, x: -50, scale: 0.9 }}
+          whileInView={{ opacity: 1, x: 0, scale: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.4, delay: 0.1 }} 
+          // viewport={{ once: true, amount: 0 }}
+        >
           <span>takashi murakami</span>
           <h1>sapphire<br/>rainbow</h1>
           <span className='hublot-price'>42mm &nbsp;&nbsp;cad 158,000</span>
           <br />
           <button className='h-sapphire-btn'>shop now</button>
-        </div>
-        <img className='h-sapphire-img-c' src={watchFeature} alt="" />
+        </motion.div>
+        <motion.div
+          className='h-sapphire-img-c'
+          initial={{ opacity: 0, x: 50, scale: 0.9 }}
+          whileInView={{ opacity: 1, x: 0, scale: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.4, delay: 0 }} 
+          // viewport={{ once: true, amount: 0 }}
+        >
+          <img src={watchFeature} alt="" />
+        </motion.div>
       </section>
 
       <section className='home-feature'>
-        <div className='hublot-spin-vid-c' >
+        <motion.div 
+          className='hublot-spin-vid-c' 
+          initial={{ opacity: 0, x: -50, scale: 0.9 }}
+          whileInView={{ opacity: 1, x: 0, scale: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.4, delay: 0.1 }} 
+          // viewport={{ once: true, amount: 0 }}
+        >
           <video autoPlay loop muted playsInline >
             <source src={hublotSpin} type='video/mp4' />
             Your browser does not support the video tag.
           </video>
-        </div>
-        <div className='hublot-feature-text'>
+        </motion.div>
+        <motion.div 
+          className='hublot-feature-text'
+          initial={{ opacity: 0, x: 50, scale: 0.9 }}
+          whileInView={{ opacity: 1, x: 0, scale: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.4, delay: 0 }} 
+          // viewport={{ once: true, amount: 0 }}
+        >
           <span className='white-text'>takashi murakami</span>
           <h1 className='white-text'>color<br/>stone</h1>
           <span className='hublot-price white-text'>45mm &nbsp;&nbsp;cad 168,000</span>
           <br />
           <button className='h-colorstone-btn'>shop now</button>
-        </div>
+        </motion.div>
       </section>
 
       
