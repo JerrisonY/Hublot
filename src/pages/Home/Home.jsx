@@ -63,15 +63,14 @@ function LandingPage() {
 
 
       <section className='home-feature white-bg'>
-        
-        <div className="hublot-feature-text">
+        <div className="hublot-feature-text sapphire-width">
           <span>takashi murakami</span>
           <h1>sapphire<br/>rainbow</h1>
           <span className='hublot-price'>42mm &nbsp;&nbsp;cad 158,000</span>
           <br />
           <button className='h-sapphire-btn'>shop now</button>
         </div>
-        <img src={watchFeature} alt="" />
+        <img className='h-sapphire-img-c' src={watchFeature} alt="" />
       </section>
 
       <section className='home-feature'>
@@ -81,16 +80,16 @@ function LandingPage() {
             Your browser does not support the video tag.
           </video>
         </div>
-        <motion.div
-          className='hublot-feature-text'
-        >
+        <div className='hublot-feature-text'>
           <span className='white-text'>takashi murakami</span>
           <h1 className='white-text'>color<br/>stone</h1>
           <span className='hublot-price white-text'>45mm &nbsp;&nbsp;cad 168,000</span>
           <br />
           <button className='h-colorstone-btn'>shop now</button>
-        </motion.div>
+        </div>
       </section>
+
+      
     </>
   )
 }

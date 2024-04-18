@@ -57,9 +57,10 @@
     align-items: center;
 }
 
+.h-sapphire-img-c {
+    width: 25%;
+}
 
-
-// second watch feature
 .hublot-spin-vid-c {
     display: flex;
     justify-content: center;
@@ -102,6 +103,9 @@
     }
 }
 
+.sapphire-width {
+    width: 30%;
+}
 
 // media queries
 
@@ -109,6 +113,10 @@
 
     .home-feature {
         flex-direction: column;
+    }
+
+    .h-sapphire-img-c {
+        width: 60%;
     }
 
     .hublot-spin-vid-c {
@@ -121,7 +129,7 @@
         }
     }
 
-    .hublot-spin-text {
+    .hublot-feature-text {
         width: 50%;
     }
 
