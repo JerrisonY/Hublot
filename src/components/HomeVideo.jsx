@@ -23,7 +23,7 @@ function HomeVideo() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }} 
-            transition={{ duration: 1, delay: 1.3 }} 
+            transition={{ duration: 2, delay: 2.7 }} 
         >
             <p className='video-subheader'>CLASSIC FUSION</p>
             <h1 className='video-header'>TAKASHI<br />MURAKAMI</h1>
