@@ -7,6 +7,8 @@
 }
 
 $header-font: 'gallery-modern';
+$subtext-color: #555555;
+
 
 @mixin default-link {
     text-decoration: none;
@@ -41,10 +43,45 @@ $header-font: 'gallery-modern';
     background-color: initial;
     text-transform: uppercase;
     letter-spacing: 0.085em;
-    transition: 0.4s;
+
+    position: relative;
+    text-decoration: none;
+    z-index: 0;
+    -webkit-transition: border-color .2s ease, background .2s ease;
+    transition: border-color .2s ease, background .2s ease;
+
+    &:before {
+        background-color: #C40D2E;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease-out;
+    }
+
+    &:hover:before {
+        top: 0;
+    }
 
     &:hover {
-        background-color: rgba($border-color, 0.1);
+        color: white;
+        border-color: #C40D2E;
+        transition: 0.25s;
+    }
+
+    &:after {
+        position: absolute;
+        right: 2.34375rem;
+        top: 50%;
+        -webkit-transform: translateY(-50%) translateX(50%);
+        -ms-transform: translateY(-50%) translateX(50%);
+        transform: translateY(-50%) translateX(50%);
+        font-size: 1.75em;
     }
 }
 

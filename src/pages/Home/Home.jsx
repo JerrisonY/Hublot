@@ -18,22 +18,20 @@ function LandingPage() {
       <HomeVideo />
 
       <motion.div
-        className="home-quote-c"
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        className="home-bio-c"
+        initial={{ opacity: 0, y: 100, scale: 0.9 }}
+        whileInView={{ opacity: 1, y: 0, scale: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.4, delay: 0.1 }} 
-        viewport={{ once: true, amount: 0 }}
+        // viewport={{ once: true, amount: 0 }}
       >
-        <span className='home-quote'>
-          “When I visited the Hublot manufacture in Switzerland for the first time, I realised to what extent the traditional know-how, precision, futuristic technology and craftsmanship were all intertwined in the creation of a watch. Bringing my art into the creativity of these watchmakers represents a unique adventure for me.”
-        </span><br />
-        <span>
-          Takashi Murakami
-        </span><br />
-        <span>
-          Contemporary Artist
-        </span>
+        <h1>revolutionary</h1>
+        <p>
+          Takashi Murakami is an international star, not only in contemporary art circles but also with the general public. He masterfully achieves this result by combining leading-edge multimedia tools with traditional Japanese techniques such as gold leaf. His visually very modern style offers a subtle reflection between Japanese tradition and pop culture. A real rock star in the contemporary art world, he coined the name Superflat for the artistic movement he began.
+        </p>
+        <button>
+          read more
+        </button>
       </motion.div>
 
       <section className="home-img-feature">
@@ -65,7 +63,7 @@ function LandingPage() {
       <section className='home-feature white-bg'>
         <motion.div 
           className="hublot-feature-text sapphire-width"
-          initial={{ opacity: 0, x: -50, scale: 0.9 }}
+          initial={{ opacity: 0, x: -80, scale: 0.9 }}
           whileInView={{ opacity: 1, x: 0, scale: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4, delay: 0.1 }} 
@@ -79,7 +77,7 @@ function LandingPage() {
         </motion.div>
         <motion.div
           className='h-sapphire-img-c'
-          initial={{ opacity: 0, x: 50, scale: 0.9 }}
+          initial={{ opacity: 0, x: 80, scale: 0.9 }}
           whileInView={{ opacity: 1, x: 0, scale: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4, delay: 0 }} 
@@ -92,7 +90,7 @@ function LandingPage() {
       <section className='home-feature'>
         <motion.div 
           className='hublot-spin-vid-c' 
-          initial={{ opacity: 0, x: -50, scale: 0.9 }}
+          initial={{ opacity: 0, x: -80, scale: 0.9 }}
           whileInView={{ opacity: 1, x: 0, scale: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4, delay: 0.1 }} 
@@ -105,7 +103,7 @@ function LandingPage() {
         </motion.div>
         <motion.div 
           className='hublot-feature-text'
-          initial={{ opacity: 0, x: 50, scale: 0.9 }}
+          initial={{ opacity: 0, x: 80, scale: 0.9 }}
           whileInView={{ opacity: 1, x: 0, scale: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4, delay: 0 }} 

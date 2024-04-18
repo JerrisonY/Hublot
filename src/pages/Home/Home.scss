@@ -1,15 +1,29 @@
 @import '../../styles/library.scss';
 
 // Home quote styles
-.home-quote-c {
+.home-bio-c {
     width: 50%;
     text-align: center;
     margin: 0 auto;
     padding: 100px 0;
 
-    .home-quote {
-        font-size: clamp(1em, 2vw, 1.7em);
+    h1 {
+        text-transform: uppercase;
+        font-family: $header-font;
+        font-size: 3em;
+        letter-spacing: 0.15em;
+        color: #C40D2E;
+    }
+
+    p {
+        font-size: clamp(1em, 1vw, 1.1em);
         font-weight: 100;
+        line-height: 1.5em;
+        color: $subtext-color;
+    }
+
+    button {
+        @include shop-button(black, lightgray)
     }
 }
 
