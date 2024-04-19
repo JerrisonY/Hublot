@@ -1,1 +1,26 @@
 @import '../styles/library.scss';
+
+.back-top-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    border: solid 1px lightgray;
+    // color: $subtext-color;
+    font-size: 0.75em;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+
+    p {
+        border-right: solid 1px lightgray;
+        padding: 15px;
+    }
+
+    i {
+        padding: 15px;
+    }
+}
