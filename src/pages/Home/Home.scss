@@ -63,7 +63,7 @@
 // Home feature styles
 .home-feature {
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
     background-color: #181718;
     display: flex;
     justify-content: center;
@@ -150,6 +150,7 @@
 
     .home-feature {
         flex-direction: column;
+        padding-top: 50px;
     }
 
     .hublot-feature-text {
@@ -174,6 +175,13 @@
     .hublot-feature-text,
     .sapphire-width {
         width: 50%;
+    }
+
+    .hublot-feature-text {
+        .h-sapphire-btn,
+        .h-colorstone-btn {
+            width: 90%;
+        }
     }
 
 }

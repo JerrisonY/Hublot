@@ -43,7 +43,12 @@ function NavBar() {
             ${(window.scrollY > 400) ? 'default-nav' : ''}`}
         >
             <NavLink to='/'>
-                <img src="public/hublot.svg" alt="" />
+                {window.innerWidth >= 900 ? (
+                    <img src="public/hublotFullLogo.svg" alt="" />
+                ) : 
+                (
+                    <img src='public/hublot.svg' alt='' />
+                )}
             </NavLink>
             {window.innerWidth >= 900 ? (
                 <div>
