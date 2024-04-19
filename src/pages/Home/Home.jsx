@@ -57,8 +57,6 @@ function LandingPage() {
         </motion.div>
       </section>
 
-      <HomeWatches />
-
 
       <section className='home-feature white-bg'>
         <motion.div 
@@ -117,6 +115,7 @@ function LandingPage() {
         </motion.div>
       </section>
 
+      <HomeWatches />
       
     </>
   )
