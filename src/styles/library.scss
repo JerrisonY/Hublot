@@ -42,15 +42,16 @@ $red: #C40D2E;
 
 @mixin shop-button($font-color, $border-color) {
     color: $font-color;
+    text-decoration: none;
     border: solid 1px $border-color;
     padding: 15px clamp(30px, 4vw, 50px);
     margin-top: 50px;
+    display: inline-block;
     background-color: initial;
     text-transform: uppercase;
     letter-spacing: 0.085em;
 
     position: relative;
-    text-decoration: none;
     z-index: 0;
     -webkit-transition: border-color .2s ease, background .2s ease;
     transition: border-color .2s ease, background .2s ease;

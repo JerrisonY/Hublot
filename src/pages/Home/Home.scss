@@ -23,7 +23,7 @@
         color: $subtext-color;
     }
 
-    button {
+    a {
         @include shop-button(black, lightgray)
     }
 }

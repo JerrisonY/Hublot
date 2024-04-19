@@ -1,5 +1,7 @@
 import './Home.scss'
 import { motion } from 'framer-motion'
+import { NavLink } from 'react-router-dom'
+
 import RotateDevice from '../../components/RotateDevice.jsx'
 import HomeVideo from '../../components/HomeVideo.jsx'
 import HomeWatches from '../../components/HomeWatches.jsx'
@@ -29,9 +31,12 @@ function LandingPage() {
         <p>
           Takashi Murakami is an international star, not only in contemporary art circles but also with the general public. He masterfully achieves this result by combining leading-edge multimedia tools with traditional Japanese techniques such as gold leaf. His visually very modern style offers a subtle reflection between Japanese tradition and pop culture. A real rock star in the contemporary art world, he coined the name Superflat for the artistic movement he began.
         </p>
-        <button>
-          read more
-        </button>
+        <NavLink 
+            to='https://www.hublot.com/en-ca' 
+            target='_blank'
+          >
+            read more
+          </NavLink>
       </motion.div>
 
       <section className="home-img-feature">
@@ -71,7 +76,13 @@ function LandingPage() {
           <h1>sapphire<br/>rainbow</h1>
           <span className='hublot-price'>42mm &nbsp;&nbsp;cad 158,000</span>
           <br />
-          <button className='h-sapphire-btn'>shop now</button>
+          <NavLink 
+            className='h-sapphire-btn'
+            to='https://www.hublot.com/en-ca' 
+            target='_blank'
+          >
+            shop now
+          </NavLink>
         </motion.div>
         <motion.div
           className='h-sapphire-img-c'
@@ -111,7 +122,13 @@ function LandingPage() {
           <h1 className='white-text'>color<br/>stone</h1>
           <span className='hublot-price white-text'>45mm &nbsp;&nbsp;cad 168,000</span>
           <br />
-          <button className='h-colorstone-btn'>shop now</button>
+          <NavLink 
+            className='h-colorstone-btn'
+            to='https://www.hublot.com/en-ca' 
+            target='_blank'
+          >
+            shop now
+          </NavLink>
         </motion.div>
       </section>
 

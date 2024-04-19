@@ -43,10 +43,14 @@ function NavBar() {
             ${(window.scrollY > 400) ? 'default-nav' : ''}`}
         >   
             <div className='nav-group-left'>
-                <NavLink to='/' className='border-right'><i class="fa-regular fa-heart fa-xl"></i></NavLink>
-                <NavLink to='/'><i class="fa-solid fa-globe fa-xl"></i></NavLink>
+                <NavLink to='https://www.hublot.com/en-ca' target='_blank' className='border-right'>
+                    <i class="fa-regular fa-heart fa-xl"></i>
+                </NavLink>
+                <NavLink to='https://www.hublot.com/en-ca' target='_blank'>
+                    <i class="fa-solid fa-globe fa-xl"></i>
+                </NavLink>
             </div>
-            <NavLink className='nav-middle' to='/'>
+            <NavLink className='nav-middle' to='https://www.hublot.com/en-ca' target='_blank'>
                 {window.innerWidth >= 900 ? (
                     <img src="public/hublotFullLogo.svg" alt="" />
                 ) : 
@@ -56,10 +60,18 @@ function NavBar() {
             </NavLink>
             {window.innerWidth >= 900 ? (
                 <div className='nav-group-right'>
-                    <NavLink to='/'>watches</NavLink>
-                    <NavLink to='/'>boutiques</NavLink>
-                    <NavLink to='/' className='border-right'><i class="fa-solid fa-location-dot fa-xl"></i></NavLink>
-                    <NavLink to='/'><i class="fa-regular fa-user fa-xl"></i></NavLink>
+                    <NavLink to='https://www.hublot.com/en-ca' target='_blank'>
+                        watches
+                    </NavLink>
+                    <NavLink to='https://www.hublot.com/en-ca' target='_blank'>
+                        boutiques
+                    </NavLink>
+                    <NavLink to='https://www.hublot.com/en-ca' target='_blank' className='border-right'>
+                        <i class="fa-solid fa-location-dot fa-xl"></i>
+                    </NavLink>
+                    <NavLink to='https://www.hublot.com/en-ca' target='_blank'>
+                        <i class="fa-regular fa-user fa-xl"></i>
+                    </NavLink>
                     
                 </div>
             ) :
