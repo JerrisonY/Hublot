@@ -28,9 +28,16 @@ function BackToTop() {
 
     }, [windowInnerWidth]);
 
+    // smooth scroll function
+    const handleScrollDownClick = () => {
+        const scrollElement = document.querySelector('.video-container');
+        scrollElement.scrollIntoView({ behavior: 'smooth' });
+    };
+
   return (
     <div 
         className={`back-top-c ${visible ? 'visible' : 'hidden'}`}
+        onClick={handleScrollDownClick}
     >
         <p>back to top</p>
         <i class="fa-solid fa-chevron-up"></i>
