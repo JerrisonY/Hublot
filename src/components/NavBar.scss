@@ -15,11 +15,11 @@
         justify-content: center;
     }
 
-    .nav-item-left {
+    .nav-group-left {
         flex: 1;
     }
 
-    .nav-item-right {
+    .nav-group-right {
         flex: 1;
         display: flex;
         justify-content: flex-end;
@@ -47,7 +47,7 @@
 
     div {
         a {
-            padding-left: 30px;
+            padding: 0 15px;
         }
     }
 

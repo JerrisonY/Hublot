@@ -6,6 +6,10 @@
     color: white;
 }
 
+.border-right {
+    border-right: solid 1.5px rgba($color: black, $alpha: 0.7);
+}
+
 $header-font: 'gallery-modern';
 $subtext-color: #555555;
 

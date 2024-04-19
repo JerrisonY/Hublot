@@ -41,8 +41,11 @@ function NavBar() {
         <nav 
             className={`nav-container ${visible ? 'visible' : 'hidden'} 
             ${(window.scrollY > 400) ? 'default-nav' : ''}`}
-        >
-            <NavLink className='nav-item-left' to='/'>+ contact us</NavLink>
+        >   
+            <div className='nav-group-left'>
+                <NavLink to='/' className='border-right'><i class="fa-regular fa-heart fa-xl"></i></NavLink>
+                <NavLink to='/'><i class="fa-solid fa-globe fa-xl"></i></NavLink>
+            </div>
             <NavLink className='nav-middle' to='/'>
                 {window.innerWidth >= 900 ? (
                     <img src="public/hublotFullLogo.svg" alt="" />
@@ -52,10 +55,12 @@ function NavBar() {
                 )}
             </NavLink>
             {window.innerWidth >= 900 ? (
-                <div className='nav-item-right'>
+                <div className='nav-group-right'>
                     <NavLink to='/'>watches</NavLink>
-                    <NavLink to='/'>our world</NavLink>
                     <NavLink to='/'>boutiques</NavLink>
+                    <NavLink to='/' className='border-right'><i class="fa-solid fa-location-dot fa-xl"></i></NavLink>
+                    <NavLink to='/'><i class="fa-regular fa-user fa-xl"></i></NavLink>
+                    
                 </div>
             ) :
             (
