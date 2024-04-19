@@ -42,7 +42,8 @@ function NavBar() {
             className={`nav-container ${visible ? 'visible' : 'hidden'} 
             ${(window.scrollY > 400) ? 'default-nav' : ''}`}
         >
-            <NavLink to='/'>
+            <NavLink className='nav-item-left' to='/'>+ contact us</NavLink>
+            <NavLink className='nav-middle' to='/'>
                 {window.innerWidth >= 900 ? (
                     <img src="public/hublotFullLogo.svg" alt="" />
                 ) : 
@@ -51,7 +52,7 @@ function NavBar() {
                 )}
             </NavLink>
             {window.innerWidth >= 900 ? (
-                <div>
+                <div className='nav-item-right'>
                     <NavLink to='/'>watches</NavLink>
                     <NavLink to='/'>our world</NavLink>
                     <NavLink to='/'>boutiques</NavLink>

@@ -10,6 +10,21 @@
     padding: 20px 30px;
     transition: 0.3s;
 
+    .nav-middle {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-item-left {
+        flex: 1;
+    }
+
+    .nav-item-right {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
     &.hidden {
         transform: translateY(-100%);
         transition-duration: 0.6s;
@@ -26,7 +41,7 @@
         letter-spacing: 0.09em;
 
         img {
-            width: 30%;
+            width: 40%;
         }
     }
 
@@ -77,6 +92,11 @@
 @media screen and (max-width: 900px) {
 
     .nav-container {
+
+        .nav-item-left {
+            display: none;
+        }
+
         a {
             font-weight: 100;
 
