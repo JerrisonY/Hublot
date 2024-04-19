@@ -1,4 +1,5 @@
 import './HomeWatches.scss'
+import React, { useState } from 'react';
 import { motion } from 'framer-motion'
 import { NavLink } from 'react-router-dom'
 
@@ -8,63 +9,51 @@ import watchThree from '../assets/img/home_watches/3.png'
 import watchFour from '../assets/img/home_watches/4.png'
 import watchFive from '../assets/img/home_watches/5.png'
 
+const watches = [
+    {
+        image: watchOne,
+        name: 'novelties'
+    },
+    {
+        image: watchTwo,
+        name: 'big bang'
+    },
+    {
+        image: watchThree,
+        name: 'classic fusion'
+    },
+    {
+        image: watchFour,
+        name: 'shaped'
+    },
+    {
+        image: watchFive,
+        name: 'mp'
+    },
+]
+
 function HomeWatches() {
+
   return (
     <>
         <section className='h-explore-c'>
             <h1 className='explore-header'>explore more watches</h1>
             <div className='h-explore-watch-c'>    
-                <motion.div
-                    className='explore-watch'
-                    initial={{ opacity: 0, y: 100 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.6, delay: 0.1 }} 
-                    // viewport={{ once: true, amount: 0 }}
-                >
-                    <NavLink to='/'><img src={watchOne} alt="" /></NavLink>
-                </motion.div>            
-                <motion.div
-                    className='explore-watch'
-                    initial={{ opacity: 0, y: 100 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.6, delay: 0.2 }} 
-                    // viewport={{ once: true, amount: 0 }}
-                >
-                    <NavLink to='/'><img src={watchTwo} alt="" /></NavLink>
-                </motion.div>
-                <motion.div
-                    className='explore-watch'
-                    initial={{ opacity: 0, y: 100 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.6, delay: 0.3 }} 
-                    // viewport={{ once: true, amount: 0 }}
-                >
-                    <NavLink to='/'><img src={watchThree} alt="" /></NavLink>
-                </motion.div>
-                <motion.div
-                    className='explore-watch'
-                    initial={{ opacity: 0, y: 100 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.6, delay: 0.4 }} 
-                    // viewport={{ once: true, amount: 0 }}
-                >
-                    <NavLink to='/'><img src={watchFour} alt="" /></NavLink>
-                </motion.div>
-                <motion.div
-                    className='explore-watch'
-                    initial={{ opacity: 0, y: 100 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.6, delay: 0.5 }} 
-                    // viewport={{ once: true, amount: 0 }}
-                >
-                    <NavLink to='/'><img src={watchFive} alt="" /></NavLink>
-                </motion.div>
-                
+                {watches.map((watch, index) =>(
+                    <motion.div
+                        key={index}
+                        className='explore-watch'
+                        initial={{ opacity: 0, y: 100 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.6, delay: 0.1 * index }}
+                    >
+                        <NavLink to='/'>
+                            <img src={watch.image} alt="" />
+                        </NavLink>
+                        <p className='watch-name'>{watch.name}</p>
+                    </motion.div>
+                ))}    
             </div>
         </section>
     
