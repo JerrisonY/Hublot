@@ -17,7 +17,8 @@
 }
 
 .h-explore-watch-c {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .explore-watch {
@@ -51,4 +52,25 @@
             transform: scale(1.1);
         }
     }
+}
+
+
+@media screen and (max-width: 1100px) {
+
+    .h-explore-c {
+        height: 100%;
+    }
+
+    .h-explore-watch-c {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+
+    .h-explore-watch-c {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
