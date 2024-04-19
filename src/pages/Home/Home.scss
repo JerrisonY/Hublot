@@ -1,18 +1,19 @@
 @import '../../styles/library.scss';
 
-// Home quote styles
+// Home bio styles
 .home-bio-c {
     width: 50%;
+    min-width: 400px;
     text-align: center;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 100px 0 150px 0;
 
     h1 {
         text-transform: uppercase;
-        font-family: $header-font;
-        font-size: 3em;
-        letter-spacing: 0.15em;
+        font-size: 2.3em;
+        letter-spacing: 0.1em;
         color: #C40D2E;
+        margin: 0 0 30px 0;
     }
 
     p {
@@ -30,7 +31,6 @@
 // Image feature styles
 .home-img-feature {
     width: 100%;
-    height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,7 +58,6 @@
     }
 
 }
-
 
 
 // Home feature styles
@@ -128,6 +127,26 @@
 // media queries
 
 @media screen and (max-width: 850px) {
+
+    .home-bio-c {
+        min-width: 90%;
+
+        h1 {
+            font-size: 1.8em;
+        }
+    }
+
+    .home-img-feature {
+        flex-direction: column;
+
+        .takashi-feat-01 {
+            width: 90%;
+        }
+
+        .takashi-feat-02 {
+            width: 90%;
+        }
+    }
 
     .home-feature {
         flex-direction: column;

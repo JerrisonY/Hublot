@@ -19,11 +19,11 @@ function LandingPage() {
 
       <motion.div
         className="home-bio-c"
-        initial={{ opacity: 0, y: 100, scale: 0.9 }}
+        initial={{ opacity: 0, y: 50, scale: 0.9 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.4, delay: 0.1 }} 
-        // viewport={{ once: true, amount: 0 }}
+        viewport={{ once: true, amount: 0 }}
       >
         <h1>revolutionary</h1>
         <p>
@@ -41,7 +41,7 @@ function LandingPage() {
           whileInView={{ opacity: 1, x: 0, y: 0 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4, delay: 0.1 }} 
-          // viewport={{ once: true, amount: 0 }}
+          viewport={{ once: true, amount: 0 }}
         >
           <img src={takashiFeature01} alt="" />
         </motion.div>
@@ -51,7 +51,7 @@ function LandingPage() {
           whileInView={{ opacity: 1, x: 0, y: 0 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4, delay: 0.1 }} 
-          // viewport={{ once: true, amount: 0 }}
+          viewport={{ once: true, amount: 0 }}
         >
           <img src={takashiFeature02} alt="" />
         </motion.div>
@@ -67,7 +67,7 @@ function LandingPage() {
           whileInView={{ opacity: 1, x: 0, scale: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4, delay: 0.1 }} 
-          // viewport={{ once: true, amount: 0 }}
+          viewport={{ once: true, amount: 0 }}
         >
           <span>takashi murakami</span>
           <h1>sapphire<br/>rainbow</h1>
@@ -81,7 +81,7 @@ function LandingPage() {
           whileInView={{ opacity: 1, x: 0, scale: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4, delay: 0 }} 
-          // viewport={{ once: true, amount: 0 }}
+          viewport={{ once: true, amount: 0 }}
         >
           <img src={watchFeature} alt="" />
         </motion.div>
@@ -94,7 +94,7 @@ function LandingPage() {
           whileInView={{ opacity: 1, x: 0, scale: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4, delay: 0.1 }} 
-          // viewport={{ once: true, amount: 0 }}
+          viewport={{ once: true, amount: 0 }}
         >
           <video autoPlay loop muted playsInline >
             <source src={hublotSpin} type='video/mp4' />
@@ -107,7 +107,7 @@ function LandingPage() {
           whileInView={{ opacity: 1, x: 0, scale: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4, delay: 0 }} 
-          // viewport={{ once: true, amount: 0 }}
+          viewport={{ once: true, amount: 0 }}
         >
           <span className='white-text'>takashi murakami</span>
           <h1 className='white-text'>color<br/>stone</h1>

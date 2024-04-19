@@ -38,7 +38,7 @@ $subtext-color: #555555;
 @mixin shop-button($font-color, $border-color) {
     color: $font-color;
     border: solid 1px $border-color;
-    padding: 15px 50px;
+    padding: 15px clamp(30px, 4vw, 50px);
     margin-top: 50px;
     background-color: initial;
     text-transform: uppercase;
@@ -82,6 +82,10 @@ $subtext-color: #555555;
         -ms-transform: translateY(-50%) translateX(50%);
         transform: translateY(-50%) translateX(50%);
         font-size: 1.75em;
+    }
+
+    @media screen and (max-width: 850px) {
+        width: 80%;
     }
 }
 
