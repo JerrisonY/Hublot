@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 import RotateDevice from '../../components/RotateDevice.jsx'
 import HomeVideo from '../../components/HomeVideo.jsx'
+import ImageFeature from '../../components/ImageFeature.jsx'
 import HomeWatches from '../../components/HomeWatches.jsx'
 import Footer from '../../components/Footer.jsx'
 import BackToTop from '../../components/BackToTop.jsx'
@@ -64,6 +65,7 @@ function LandingPage() {
         </motion.div>
       </section>
 
+      <ImageFeature />
 
       <section className='home-feature white-bg'>
         <motion.div 
