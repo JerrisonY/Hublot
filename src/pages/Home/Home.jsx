@@ -5,6 +5,8 @@ import { NavLink } from 'react-router-dom'
 import RotateDevice from '../../components/RotateDevice.jsx'
 import HomeVideo from '../../components/HomeVideo.jsx'
 import HomeWatches from '../../components/HomeWatches.jsx'
+import Footer from '../../components/Footer.jsx'
+import BackToTop from '../../components/BackToTop.jsx'
 
 import takashiFeature01 from '../../assets/img/home/takashi1.jpg'
 import takashiFeature02 from '../../assets/img/home/takashi2.jpg'
@@ -133,7 +135,8 @@ function LandingPage() {
       </section>
 
       <HomeWatches />
-      
+      <Footer />
+      <BackToTop />
     </>
   )
 }
