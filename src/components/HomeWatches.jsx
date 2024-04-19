@@ -47,10 +47,12 @@ function HomeWatches() {
                         whileInView={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.6, delay: 0.1 * index }}
+                        viewport={{ once: true, amount: 0 }}
                     >
-                        <NavLink to='/'>
+                        <NavLink to='https://www.hublot.com/en-ca' target='_blank'>
                             <img src={watch.image} alt="" />
                         </NavLink>
+                        <div className='red-border'></div>
                         <p className='watch-name'>{watch.name}</p>
                     </motion.div>
                 ))}    
