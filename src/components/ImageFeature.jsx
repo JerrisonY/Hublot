@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { NavLink } from 'react-router-dom'
 import './ImageFeature.scss'
 
-import border from 'public/borderthick.svg'
+import border from '/borderthick.svg'
 import video from '../assets/video/sapphirevideo.mp4'
 import hublotDark from '../assets/img/image_feature/hublotdark.jpeg'
 

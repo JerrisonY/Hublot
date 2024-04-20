@@ -4,8 +4,8 @@ import Hamburger from 'hamburger-react'
 
 import './NavBar.scss'
 
-import hublotFullLogo from 'public/hublotFullLogo.svg'
-import hublotLogo from 'public/hublot.svg'
+import hublotFullLogo from '/hublotFullLogo.svg'
+import hublotLogo from '/hublot.svg'
 
 function NavBar() {
     const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);

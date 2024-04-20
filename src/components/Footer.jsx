@@ -2,7 +2,7 @@ import React from 'react'
 import './Footer.scss'
 
 import { NavLink } from 'react-router-dom'
-import hublotLogo from 'public/hublotlightlogo.svg'
+import hublotLogo from '/hublotlightlogo.svg'
 
 const services = [
     'NEWSLETTER',
