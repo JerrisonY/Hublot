@@ -17,10 +17,7 @@
     }
 
     p {
-        font-size: clamp(1em, 1vw, 1.1em);
-        font-weight: 100;
-        line-height: 1.6em;
-        color: $subtext-color;
+        @include description-style;
     }
 
     a {

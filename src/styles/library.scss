@@ -33,6 +33,13 @@ $red: #C40D2E;
     text-transform: uppercase;
 }
 
+@mixin description-style {
+    font-size: clamp(1em, 1vw, 1.1em);
+    font-weight: 100;
+    line-height: 1.6em;
+    color: $subtext-color;
+}
+
 @mixin price-border {
     content: url(../../../public/border.svg);
     position: absolute;
