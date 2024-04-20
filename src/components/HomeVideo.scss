@@ -105,6 +105,25 @@
   
 // media queries
 
+@media screen and (min-width: 2000px) {
+
+  .video-text-c {
+    .video-header {
+      font-size: 8em;
+    }
+
+    .video-subheader {
+      font-size: 1.1em;
+    }
+
+    .video-shop {
+      font-size: 0.95em;
+    }
+  }
+
+}
+
+
 @media screen and (max-width: 900px) {
 
     .video-text-c {

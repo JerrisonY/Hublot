@@ -88,6 +88,39 @@
     }
 }
 
+
+@media screen and (min-width: 2000px) {
+
+    .image-feat-one {
+        .img-one-text-c {
+            padding: 8vw;
+            
+            h1 {
+                font-size: 5em;
+            }
+
+            a {
+                padding: 20px 80px;
+            }
+        }
+    }
+
+    .image-feat-two {
+        .img-two-text-c {
+            padding: 8vw;
+
+            h1 {
+                font-size: 5em;
+            }
+            
+            a {
+                padding: 20px 80px;
+            }
+        }
+    }
+    
+}
+
 @media screen and (max-width: 700px) {
 
     .image-feat-c {

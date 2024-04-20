@@ -125,6 +125,14 @@
 
 // media queries
 
+@media screen and (min-width: 2000px) {
+
+    .home-bio-c {
+        width: 44%;
+    }
+
+}   
+
 @media screen and (max-width: 850px) {
 
     .home-bio-c {
