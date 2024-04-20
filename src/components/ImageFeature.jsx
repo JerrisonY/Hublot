@@ -45,10 +45,35 @@ function ImageFeature() {
         </div>
 
         <div className='image-feat-two'>
-            <img src={hublotDark} alt="" />
-            <div className='img-two-text-c'>
-                <h1>the new luxe</h1>
-            </div>
+            <motion.div 
+                className='feat-two-img-c'
+                initial={{ opacity: 0, x: -60, y: 30 }}
+                whileInView={{ opacity: 1, x: 0, y: 0 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.4, delay: 0.1 }} 
+                viewport={{ once: true, amount: 0 }}
+            >
+                <img src={hublotDark} alt="" />
+            </motion.div>
+            <motion.div 
+                className="img-two-text-c"
+                initial={{ opacity: 0, x: 60, y: 30 }}
+                whileInView={{ opacity: 1, x: 0, y: 0 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.4, delay: 0.1 }} 
+                viewport={{ once: true, amount: 0 }}
+            >
+                
+                <h1>perfect<br />oppulence</h1>
+                <img src="public/borderthick.svg" alt="" />
+                <p>In search of the perfect fusion between movement and case, Hublot engineers and chemists have researched and developed a transparent material which reveals the heart of the watch, all while being robust enough to effectively protect the mechanism.</p>
+                <NavLink 
+                    to='https://www.hublot.com/en-ca/watches/mp/mp-15-takashi-murakami-tourbillon-sapphire-42-mm'
+                    target='_blank'
+                >
+                    discover
+                </NavLink>
+            </motion.div>
         </div>
     </div>
   )
