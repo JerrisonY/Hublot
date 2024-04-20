@@ -4,6 +4,9 @@ import Hamburger from 'hamburger-react'
 
 import './NavBar.scss'
 
+import hublotFullLogo from 'public/hublotFullLogo.svg'
+import hublotLogo from 'public/hublot.svg'
+
 function NavBar() {
     const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
     const [visible, setVisible] = useState(true);
@@ -52,10 +55,10 @@ function NavBar() {
             </div>
             <NavLink className='nav-middle' to='https://www.hublot.com/en-ca' target='_blank'>
                 {window.innerWidth >= 900 ? (
-                    <img src="public/hublotFullLogo.svg" alt="" />
+                    <img src={hublotFullLogo} alt="" />
                 ) : 
                 (
-                    <img src='public/hublot.svg' alt='' />
+                    <img src={hublotLogo} alt='' />
                 )}
             </NavLink>
             {window.innerWidth >= 900 ? (

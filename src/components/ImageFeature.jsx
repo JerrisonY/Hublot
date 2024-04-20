@@ -3,8 +3,8 @@ import { motion } from 'framer-motion'
 import { NavLink } from 'react-router-dom'
 import './ImageFeature.scss'
 
+import border from 'public/borderthick.svg'
 import video from '../assets/video/sapphirevideo.mp4'
-import hublotLight from '../assets/img/image_feature/hublotlight.jpg'
 import hublotDark from '../assets/img/image_feature/hublotdark.jpeg'
 
 function ImageFeature() {
@@ -20,7 +20,7 @@ function ImageFeature() {
                 viewport={{ once: true, amount: 0 }}
             >
                 <h1>tourbillion<br /> sapphire</h1>
-                <img src="public/borderthick.svg" alt="" />
+                <img src={border} alt="" />
                 <p>With just 50 pieces available, the MP-15 is the first limited edition Hublot watch with a central flying tourbillon. This quirky, playful, yet high-tech model offers a magnificent interpretation of the visual effects of sapphire.</p>
                 <NavLink 
                     to='https://www.hublot.com/en-ca/watches/mp/mp-15-takashi-murakami-tourbillon-sapphire-42-mm'
@@ -65,7 +65,7 @@ function ImageFeature() {
             >
                 
                 <h1>perfect<br />oppulence</h1>
-                <img src="public/borderthick.svg" alt="" />
+                <img src={border} alt="" />
                 <p>In search of the perfect fusion between movement and case, Hublot engineers and chemists have researched and developed a transparent material which reveals the heart of the watch, all while being robust enough to effectively protect the mechanism.</p>
                 <NavLink 
                     to='https://www.hublot.com/en-ca/watches/mp/mp-15-takashi-murakami-tourbillon-sapphire-42-mm'

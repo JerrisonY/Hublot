@@ -2,6 +2,7 @@ import React from 'react'
 import './Footer.scss'
 
 import { NavLink } from 'react-router-dom'
+import hublotLogo from 'public/hublotlightlogo.svg'
 
 const services = [
     'NEWSLETTER',
@@ -30,7 +31,7 @@ function Footer() {
   return (
     <footer className='footer-c'>
         <div className='footer-logo-c'>
-            <img src="public/hublotlightlogo.svg" alt="" />
+            <img src={hublotLogo} alt="" />
         </div>
         <div className='footer-services-c'>
             {services.map((service, index) => (
